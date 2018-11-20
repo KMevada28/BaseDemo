@@ -5,15 +5,15 @@
 package com.daggerdemo.network;
 
 import com.daggerdemo.entity.response.EmployeeResponseEntity;
-import com.daggerdemo.entity.response.LabelResponseEntity;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 public interface LabelManagementAPI {
 
-    @GET("employee")
-    Observable<EmployeeResponseEntity> getEmployeeResponse(String empId);
+    @GET("employee/{empId}")
+    Observable<EmployeeResponseEntity> getEmployeeResponse(@Path("empId") String empId);
 
 }
 

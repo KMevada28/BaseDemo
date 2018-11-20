@@ -5,7 +5,6 @@
 package com.daggerdemo.network.repository;
 
 import com.daggerdemo.entity.response.EmployeeResponseEntity;
-import com.daggerdemo.entity.response.LabelResponseEntity;
 import com.daggerdemo.network.dataClass.ApiCallFactory;
 import com.daggerdemo.network.domain.IApiCallRepository;
 

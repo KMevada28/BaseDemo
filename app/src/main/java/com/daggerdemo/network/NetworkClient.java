@@ -13,7 +13,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory;
 
 public class NetworkClient {
 
-    private static final String BASE_URL = "http://dummy.restapiexample.com";
+    private static final String BASE_URL = "http://dummy.restapiexample.com/api/v1/";
 
     private Retrofit retrofit;
 
