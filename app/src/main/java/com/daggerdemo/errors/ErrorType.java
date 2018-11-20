@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017 Nedbank. All rights reserved.
+ * Copyright © 2017 Demo_By_K_Mevada. All rights reserved.
  */
 
 package com.daggerdemo.errors;
@@ -23,8 +23,8 @@ public enum ErrorType {
     PROFILE_LOCKED,
     PROFILE_SOMETHING_WRONG,
     APPROVE_IT_REJECTED,
-    NedbankId_WRONG_CREDS,
-    NedbankID_LOCKED,
+    Demo_By_K_MevadaId_WRONG_CREDS,
+    Demo_By_K_MevadaID_LOCKED,
     RESOLVE,
     PASSWORD_DO_NOT_MATCH,
     PROVIDE_VALID_PASSWORD,

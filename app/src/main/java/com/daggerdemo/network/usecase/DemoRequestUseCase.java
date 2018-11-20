@@ -1,6 +1,4 @@
-/*
- * Copyright © 2018 Nedbank. All rights reserved.
- */
+
 
 package com.daggerdemo.network.usecase;
 

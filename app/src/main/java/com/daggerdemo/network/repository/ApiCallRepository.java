@@ -1,5 +1,5 @@
 /*
- * Copyright © 2018 Nedbank. All rights reserved.
+ * Copyright © 2018 Demo_By_K_Mevada. All rights reserved.
  */
 
 package com.daggerdemo.network.repository;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright © 2017 Nedbank. All rights reserved.
+  ~ Copyright © 2017 Demo_By_K_Mevada. All rights reserved.
   -->
 
 <resources>
@@ -27,13 +27,13 @@
     <string name="error_message_profile_something_wrong">Something is wrong with your profile.</string>
     <string name="error_approve_it_rejected">You have rejected the Approve-it&#8482; message.</string>
 
-    <string name="error_message_nedbankid_wrong_creds">Username and password combination do not match.</string>
-    <string name="error_message_nedbankid_account_locked">Nedbank ID credentials have been locked out. Resolve to regain access.</string>
+    <string name="error_message_Demo_By_K_Mevadaid_wrong_creds">Username and password combination do not match.</string>
+    <string name="error_message_Demo_By_K_Mevadaid_account_locked">Demo_By_K_Mevada ID credentials have been locked out. Resolve to regain access.</string>
     <string name="error_message_password_do_not_match">password do not match</string>
     <string name="error_message_provide_valid_password">Please provide valid Password</string>
     <string name="error_message_invalid_pin_card">Card validation failed.</string>
     <string name="error_message_card_validation_failed">Card number and ATM PIN do not match.</string>
-    <string name="error_message_not_individual_card">Try using your personal Nedbank card.</string>
+    <string name="error_message_not_individual_card">Try using your personal Demo_By_K_Mevada card.</string>
     <string name="error_message_wrong_user_details">Cannot find the provided user details. Please correct and retry.</string>
     <string name="error_message_username_not_found_forgot_pass">We could not find this username, please try with the correct username.</string>
     <string name="error_message_card_locked">Card has been blocked.</string>
