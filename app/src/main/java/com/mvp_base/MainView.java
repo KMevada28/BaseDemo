@@ -1,7 +1,7 @@
 package com.mvp_base;
 
 import com.mvp_base.base.BaseView;
-import com.mvp_base.entity.response.EmployeeResponseEntity;
+import com.mvp_base.viewModel.EmployeeResponseViewModel;
 
 /**
  * Created by kundankumar.mevada on 9/20/2018.
@@ -13,6 +13,6 @@ public interface MainView extends BaseView {
 
     void handleAPIError(String errorMessage);
 
-    void showEmpData(EmployeeResponseEntity employeeResponseEntity);
+    void showEmpData(EmployeeResponseViewModel employeeResponseViewModel);
 
 }

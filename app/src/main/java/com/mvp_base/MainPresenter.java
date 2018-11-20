@@ -4,7 +4,8 @@ import android.content.SharedPreferences;
 
 import com.mvp_base.base.BasePresenter;
 import com.mvp_base.errors.ErrorHandler;
-import com.mvp_base.network.usecase.DemoRequestUseCase;
+import com.mvp_base.mapper.dataModelToViewModel.EmployeeResponseDataModelToViewModelMapper;
+import com.mvp_base.useCase.DemoRequestUseCase;
 
 import javax.inject.Inject;
 
@@ -17,12 +18,14 @@ public class MainPresenter extends BasePresenter<MainView> {
     SharedPreferences sharedPreferences;
     DemoRequestUseCase demoRequestUseCase;
     ErrorHandler errorHandler;
+    EmployeeResponseDataModelToViewModelMapper dataModelToViewModelMapper;
 
     @Inject
-    public MainPresenter(SharedPreferences sharedPreferences, DemoRequestUseCase demoRequestUseCase, ErrorHandler errorHandler) {
+    public MainPresenter(SharedPreferences sharedPreferences, DemoRequestUseCase demoRequestUseCase, ErrorHandler errorHandler, EmployeeResponseDataModelToViewModelMapper dataModelToViewModelMapper) {
         this.sharedPreferences = sharedPreferences;
         this.demoRequestUseCase = demoRequestUseCase;
         this.errorHandler = errorHandler;
+        this.dataModelToViewModelMapper = dataModelToViewModelMapper;
     }
 
     boolean calculateData(String userName) {
@@ -42,7 +45,7 @@ public class MainPresenter extends BasePresenter<MainView> {
 
         demoRequestUseCase.execute(empId)
                 .compose(bindToLifecycle())
-                .subscribe(empResponseEntity -> view.showEmpData(empResponseEntity), throwable -> {
+                .subscribe(employeeResponseDataModel -> view.showEmpData(this.dataModelToViewModelMapper.mapEmployeeResponseViewModel(employeeResponseDataModel)), throwable -> {
                     if (view != null) {
                         view.handleAPIError(errorHandler.getErrorMessage(throwable).getMessage());
                     }

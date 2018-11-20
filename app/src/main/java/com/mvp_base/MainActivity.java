@@ -6,9 +6,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.mvp_base.base.BaseActivity;
 import com.mvp_base.DI.MainActivityDI;
-import com.mvp_base.entity.response.EmployeeResponseEntity;
+import com.mvp_base.base.BaseActivity;
+import com.mvp_base.viewModel.EmployeeResponseViewModel;
 
 import javax.inject.Inject;
 
@@ -92,8 +92,8 @@ public class MainActivity extends BaseActivity implements MainView {
     }
 
     @Override
-    public void showEmpData(EmployeeResponseEntity employeeResponseEntity) {
-        Toast.makeText(this, "EMP NAME :-"+employeeResponseEntity.getEmployeeName(),Toast.LENGTH_LONG).show();
-        Toast.makeText(this, "EMP SALARY:-"+employeeResponseEntity.getEmployeeSalary(),Toast.LENGTH_LONG).show();
+    public void showEmpData(EmployeeResponseViewModel employeeResponseViewModel) {
+        Toast.makeText(this, "EMP NAME :-"+employeeResponseViewModel.getEmployeeName(),Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "EMP SALARY:-"+employeeResponseViewModel.getEmployeeSalary(),Toast.LENGTH_LONG).show();
     }
 }
