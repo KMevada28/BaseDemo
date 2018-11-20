@@ -10,6 +10,7 @@ import com.mvp_base.DI.MainActivityDI;
 import com.mvp_base.base.BaseActivity;
 import com.mvp_base.viewModel.EmployeeResponseViewModel;
 
+
 import javax.inject.Inject;
 
 import butterknife.BindView;
@@ -96,4 +97,5 @@ public class MainActivity extends BaseActivity implements MainView {
         Toast.makeText(this, "EMP NAME :-"+employeeResponseViewModel.getEmployeeName(),Toast.LENGTH_LONG).show();
         Toast.makeText(this, "EMP SALARY:-"+employeeResponseViewModel.getEmployeeSalary(),Toast.LENGTH_LONG).show();
     }
+    
 }

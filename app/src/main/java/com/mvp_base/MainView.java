@@ -13,6 +13,6 @@ public interface MainView extends BaseView {
 
     void handleAPIError(String errorMessage);
 
-    void showEmpData(EmployeeResponseViewModel employeeResponseViewModel);
+    void showEmpData(EmployeeResponseEntity employeeResponseEntity);
 
 }

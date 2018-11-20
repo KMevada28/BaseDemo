@@ -50,7 +50,6 @@ public class MainPresenter extends BasePresenter<MainView> {
                         view.handleAPIError(errorHandler.getErrorMessage(throwable).getMessage());
                     }
                 });
-
-    }
+      }
 
 }
