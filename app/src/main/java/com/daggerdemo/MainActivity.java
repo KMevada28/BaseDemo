@@ -6,8 +6,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.daggerdemo.DI.SharedPrefDI;
 import com.daggerdemo.base.BaseActivity;
+import com.daggerdemo.DI.MainActivityDI;
+import com.daggerdemo.entity.response.EmployeeResponseEntity;
 
 import javax.inject.Inject;
 
@@ -35,7 +36,7 @@ public class MainActivity extends BaseActivity implements MainView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        SharedPrefDI.getShredPreferenceComponent(this).inject(this);
+        MainActivityDI.getMainActivityComponent(this).inject(this);
     }
 
     @Override
@@ -74,9 +75,25 @@ public class MainActivity extends BaseActivity implements MainView {
 
     @OnClick(R.id.btnGet)
     public void getData() {
-        if (sharedPreferences != null && sharedPreferences.contains(Constant.userNameKey)) {
+        /*if (sharedPreferences != null && sharedPreferences.contains(Constant.userNameKey)) {
             mainPresenter.calculateData("" + sharedPreferences.getString(Constant.userNameKey, Constant.emptyString));
+        }*/
+        if(inNumber.getText().toString().length()>0){
+            mainPresenter.getEmployee(inNumber.getText().toString());
+        }else{
+            Toast.makeText(this, R.string.please_enter_emp_id, Toast.LENGTH_SHORT).show();
         }
+
     }
 
+    @Override
+    public void handleAPIError(String errorMessage) {
+        Toast.makeText(this, errorMessage,Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void showEmpData(EmployeeResponseEntity employeeResponseEntity) {
+        Toast.makeText(this, "EMP NAME :-"+employeeResponseEntity.getEmployeeName(),Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "EMP SALARY:-"+employeeResponseEntity.getEmployeeSalary(),Toast.LENGTH_LONG).show();
+    }
 }

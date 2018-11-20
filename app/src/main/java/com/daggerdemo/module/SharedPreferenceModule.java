@@ -2,10 +2,11 @@ package com.daggerdemo.module;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 
-import javax.inject.Singleton;
+import com.daggerdemo.DI.scopes.ActivityScope;
+import com.daggerdemo.network.usecase.AndroidUseCaseComposer;
+import com.daggerdemo.network.usecase.UseCaseComposer;
 
 import dagger.Module;
 import dagger.Provides;
@@ -16,21 +17,21 @@ import dagger.Provides;
 @Module
 public class SharedPreferenceModule {
 
-    Context context;
+    private Context context;
 
     public SharedPreferenceModule(Context context) {
         this.context = context;
     }
 
-    @Singleton
+    @ActivityScope
     @Provides
-    public Context provideContext() {
+    Context provideContext() {
         return context;
     }
 
-    @Singleton
+    @ActivityScope
     @Provides
-    public SharedPreferences getSharedPreference() {
+    SharedPreferences getSharedPreference() {
         return PreferenceManager.getDefaultSharedPreferences(context);
     }
 
