@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2017 Demo_By_K_Mevada. All rights reserved.
+  -->
+
+<resources>
+    <string name="error_generic">A server error has occurred. Please retry again later.</string>
+    <string name="error_server">Server connection lost.</string>
+    <string name="error_fail_on_approve_it_screen">A server error has occurred. Please retry again.</string>
+    <string name="error_socket_timeout">Connection to server was lost</string>
+    <string name="error_ssl_error">SSL certificates mismatch</string>
+    <string name="error_in_finger_print">Some error occurred in finger print detection.Please retry.</string>
+    <string name="error_http_generic">Connection to server was lost</string>
+    <string name="error_http_forbidden">Connection to server was lost</string>
+    <string name="error_http_bad_request">Connection to server was lost</string>
+    <string name="error_http_authorization">Cannot authenticate</string>
+    <string name="error_server_error">Connection to server was lost</string>
+    <string name="error_not_found">Server url not found</string>
+    <string name="error_no_network">No Internet Connection</string>
+    <string name="error_no_content">No content to display</string>
+    <string name="error_unknown">Some error occurred</string>
+    <string name="error_username_taken">This Username is already taken. Try some other username.</string>
+    <string name="session_has_expired">Your session has expired. You have been logged out due to inactivity.</string>
+    <string name="error_message_profile_wrong_creds">Profile number, PIN and password do not match.</string>
+    <string name="error_message_tnc_not_accepted">Latest Terms and conditions not accepted</string>
+
+    <string name="error_message_profile_locked">Profile has been locked</string>
+    <string name="error_message_profile_something_wrong">Something is wrong with your profile.</string>
+    <string name="error_approve_it_rejected">You have rejected the Approve-it&#8482; message.</string>
+
+    <string name="error_message_Demo_By_K_Mevadaid_wrong_creds">Username and password combination do not match.</string>
+    <string name="error_message_Demo_By_K_Mevadaid_account_locked">Demo_By_K_Mevada ID credentials have been locked out. Resolve to regain access.</string>
+    <string name="error_message_password_do_not_match">password do not match</string>
+    <string name="error_message_provide_valid_password">Please provide valid Password</string>
+    <string name="error_message_invalid_pin_card">Card validation failed.</string>
+    <string name="error_message_card_validation_failed">Card number and ATM PIN do not match.</string>
+    <string name="error_message_not_individual_card">Try using your personal Demo_By_K_Mevada card.</string>
+    <string name="error_message_wrong_user_details">Cannot find the provided user details. Please correct and retry.</string>
+    <string name="error_message_username_not_found_forgot_pass">We could not find this username, please try with the correct username.</string>
+    <string name="error_message_card_locked">Card has been blocked.</string>
+    <string name="error_message_card_inactive">There is some problem with your card\nKindly try with your personal card</string>
+    <string name="error_message_card_pin_invalid_primary_account_number">Invalid PIN.</string>
+    <string name="error_message_card_technical_error">Technical Error.</string>
+    <string name="error_linking_accoutns">Error during linking of accounts</string>
+    <string name="error_repeated_password">You have already used this password, please try another.</string>
+    <string name="error_null_base_url">Server url is not valid.</string>
+    <string name="error_maintenance_mode">Maintenance mode.</string>
+    <string name="error_wrong_otp">Pin entered is incorrect.</string>
+    <string name="error_no_linkable_accounts">You have no more accounts available to link to your profile.</string>
+
+    <string name="error_no_activity_title">An error occurred</string>
+    <string name="error_no_activity_message">Could not find application to handle this request.</string>
+
+    <string name="transaction_confirmation_error_msg">Your payment might not have gone through. Please check your transactions.</string>
+
+</resources>
