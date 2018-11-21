@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.daggerdemo", appContext.getPackageName());
+        assertEquals("com.mvp_base", appContext.getPackageName());
     }
 }
