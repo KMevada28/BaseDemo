@@ -33,6 +33,7 @@ ext {
     retrofitVersion = '2.3.0'
     okHttpLoggingVersion = '3.10.0'
     moshiVersion = '1.5.0'
+    dbflow_version = '4.0.3'
 
 }
 
@@ -40,6 +41,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+    }
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 

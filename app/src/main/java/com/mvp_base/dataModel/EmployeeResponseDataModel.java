@@ -1,16 +1,26 @@
 package com.mvp_base.dataModel;
 
-public class EmployeeResponseDataModel {
+import com.mvp_base.db.MyDatabase;
+import com.raizlabs.android.dbflow.annotation.Column;
+import com.raizlabs.android.dbflow.annotation.PrimaryKey;
+import com.raizlabs.android.dbflow.annotation.Table;
+import com.raizlabs.android.dbflow.structure.BaseModel;
 
-    private String id;
-
+@Table(database = MyDatabase.class)
+public class EmployeeResponseDataModel extends BaseModel{
+    @PrimaryKey
+    @Column
+    public String id;
+    @Column
     private String employeeName;
-
+    @Column
     private String employeeSalary;
-
+    @Column
     private String employeeAge;
-
+    @Column
     private String profileImage;
+    @Column
+    private String organization;
 
     public String getId() {
         return id;
@@ -50,5 +60,13 @@ public class EmployeeResponseDataModel {
 
     public void setProfileImage(String profileImage) {
         this.profileImage = profileImage;
+    }
+
+    public String getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(String organization) {
+        this.organization = organization;
     }
 }

@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">DaggerDemo</string>
+    <string name="app_name">MVP Base</string>
     <string name="you_have_success">You have successfully save data</string>
-    <string name="please_fill_both_fields">Please fill both fields</string>
+    <string name="please_fill_both_fields">Please fill all fields</string>
     <string name="title_activity_base">BaseActivity</string>
     <string name="please_enter_emp_id">Please enter employee id</string>
 

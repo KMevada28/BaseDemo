@@ -39,6 +39,10 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
+    //DbFlow
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:$rootProject.dbflow_version"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:$rootProject.dbflow_version"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:$rootProject.dbflow_version"
 
     //retrofit
     api "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
@@ -56,5 +60,7 @@ dependencies {
     api "com.jakewharton.rxbinding2:rxbinding:$rootProject.rxbindingVersion"
     api "com.tbruyelle.rxpermissions2:rxpermissions:$rootProject.rxpermissionsVersion@aar"
     api "com.cantrowitz:rxbroadcast:$rootProject.rxbroadcastVersion"
+
+
 
 }
